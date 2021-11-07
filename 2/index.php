@@ -11,14 +11,14 @@
             margin: auto;
             width: 50%;
             padding: 20px;
-            text-align: center; 
-             }
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
     <form method="POST">
-        <textarea name="text" cols="30" rows="10" value="<?php echo $text; ?>"></textarea><br>
+        <textarea name="text" cols="30" rows="10"></textarea><br>
         <button type="submit" name="send">حساب</button>
     </form>
 
@@ -30,7 +30,6 @@
                             result = نتيجة
     ========================================================================================
     */
-
     if (isset($_POST['send'])) 
     {
         $text = $_POST['text'];
